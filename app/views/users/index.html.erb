@@ -1,0 +1,14 @@
+<h1>Users#index</h1>
+
+
+
+<table>
+<%- @users.each do |user|%>
+<tr>
+  <td> <%= user.login %></td>
+</tr>
+<%- end %>
+</table>  
+
+
+<%= link_to 'new User', new_user_path %>
